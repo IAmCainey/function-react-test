@@ -1,9 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
-function App(props) {
+function App() {
   const name = "paul caine";
   const age = "40, only just";
   const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    document.title = `clicked ${count} times and ${count} * 2 = ${count * 2}`;
+  });
   return (
     <div className="App">
       <h1>functions and testing</h1>
@@ -12,6 +16,11 @@ function App(props) {
       <h1>{count}</h1>
       <button onClick={() => setCount(count + 1)}>add 1</button>
       <button onClick={() => setCount(count - 1)}>minus 1</button>
+
+      <p>
+        also while your clicking like a clown to see if you can beat the
+        numbers, check the page title BABY!
+      </p>
       <br />
       <p>
         name : <span>{name}</span> <br />

@@ -46,13 +46,13 @@ function App() {
 
       <p>test the button above</p>
       <p>
-        onso did you know that the number above times by 2 is the number below!
+        also did you know that the number above times by 2 is the number below!
       </p>
       <h1 className="sum">{count * 2}</h1>
       <p>
         this is a cool way to learn react{" "}
         <b>
-          <i>useStats</i>
+          <i>useState</i>
         </b>
       </p>
 
@@ -65,7 +65,7 @@ function App() {
       </section>
 
       <section>
-        <h1>i wouldnt!!!!</h1>
+        <h1>I wouldnt!!!!</h1>
 
         <button onClick={() => alert("i fucking told you")}>
           {" "}

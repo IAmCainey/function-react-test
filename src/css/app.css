@@ -47,7 +47,7 @@ button {
 }
 
 .sum {
-  @apply text-6xl font-bold text-purple-800 py-5;
+  @apply text-6xl font-bold text-purple-800 py-5 animate-bounce;
 }
 
 p {

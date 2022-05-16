@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { MdOutlineDarkMode } from "react-icons/md";
 
 function App() {
   const name = "paul caine";
@@ -8,14 +9,30 @@ function App() {
   useEffect(() => {
     document.title = `clicked ${count} times and ${count} * 2 = ${count * 2}`;
   });
+
+  const [darkMode, setDarkMode] = React.useState(false);
+
+  React.useEffect(() => {
+    if (darkMode) {
+      document.body.classList.add("dark");
+    } else {
+      document.body.classList.remove("dark");
+    }
+  }, [darkMode]);
+
   return (
     <div className="App">
       <h1>functions and testing</h1>
       <p>this is all just a test</p>
       <h2>click counter</h2>
-      <h1>{count}</h1>
+      <h1 className="sum">{count}</h1>
       <button onClick={() => setCount(count + 1)}>add 1</button>
       <button onClick={() => setCount(count - 1)}>minus 1</button>
+
+      <button
+        className="toggle"
+        onClick={() => setDarkMode(!darkMode)}
+      ></button>
 
       <p>
         also while your clicking like a clown to see if you can beat the
@@ -31,7 +48,7 @@ function App() {
       <p>
         onso did you know that the number above times by 2 is the number below!
       </p>
-      <h1>{count * 2}</h1>
+      <h1 className="sum">{count * 2}</h1>
       <p>
         this is a cool way to learn react{" "}
         <b>

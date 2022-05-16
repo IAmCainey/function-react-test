@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  @apply p-5;
+}
+
+.dark {
+  @apply bg-slate-900 text-slate-50 transition-all delay-100;
+}
+
+.dark button {
+  @apply bg-purple-400 hover:bg-slate-50 hover:text-slate-800;
+}
+
+.dark img {
+  @apply bg-white px-5 pt-5 pb-20;
+}
+
+.dark .toggle {
+  @apply bg-slate-50 text-slate-900;
+}
+
+.dark .toggle::before {
+  content: "for the light of god";
+}
+
+.toggle {
+  @apply bg-slate-900;
+}
+
+.toggle::before {
+  content: "enter dark mode";
+}
+
+img {
+  @apply w-full max-w-2xl my-10 rounded-2xl px-5 pt-5 pb-20;
+}
+
+button {
+  @apply bg-green-900 px-5 py-3 rounded-md mr-10 font-bold uppercase text-gray-200 my-5 hover:bg-green-400;
+  letter-spacing: 0.3rem;
+}
+
+.switch {
+  @apply p-3 bg-slate-900 text-slate-50 rounded-lg;
+}
+
+.sum {
+  @apply text-6xl font-bold text-purple-800 py-5;
+}
+
+p {
+  @apply py-3;
+}
+
+span {
+  @apply font-bold capitalize text-purple-500;
+  letter-spacing: 0.3rem;
+}
+/*# sourceMappingURL=app.css.map */

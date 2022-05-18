@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
-import { MdOutlineDarkMode } from "react-icons/md";
 
 function App() {
   const name = "paul caine";
   const age = "40, only just";
   const [count, setCount] = useState(0);
+  const title = "JS functions & testing";
 
   useEffect(() => {
     document.title = `clicked ${count} times and ${count} * 2 = ${count * 2}`;
@@ -22,7 +22,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>functions and testing</h1>
+      <h1 id="title"></h1>
       <p>this is all just a test</p>
       <h2>click counter</h2>
       <h1 className="sum">{count}</h1>

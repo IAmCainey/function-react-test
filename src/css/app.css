@@ -5,6 +5,10 @@ body {
   @apply p-5;
 }
 
+h1 {
+  @apply text-4xl capitalize text-slate-500;
+}
+
 .dark {
   @apply bg-slate-900 text-slate-50 transition-all delay-100;
 }
@@ -15,6 +19,10 @@ body {
 
 .dark img {
   @apply bg-white px-5 pt-5 pb-20;
+}
+
+.dark h1 {
+  @apply text-yellow-400;
 }
 
 .dark .toggle {

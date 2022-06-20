@@ -22,7 +22,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1 id="title"></h1>
+      <h1 id="title">{title}</h1>
       <p>this is all just a test</p>
       <h2>click counter</h2>
       <h1 className="sum">{count}</h1>
